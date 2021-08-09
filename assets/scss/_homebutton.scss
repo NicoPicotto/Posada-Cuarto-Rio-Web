@@ -1,0 +1,28 @@
+//Import colores
+@import "colores";
+
+
+/*Boton Volver*/
+.inicioboton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .inicio{
+        text-decoration: none;
+        background-color: $color-primario;
+        color: $color-terciario;
+        font-size: 1em;
+        font-weight: bolder;
+        padding: 0.7em 0.7em;
+        border: none;
+        cursor: pointer;
+        transition: 0.2s;
+
+        &:hover{
+            color: $color-primario;
+            background-color: $color-secundario;
+          }
+        }
+}
+  

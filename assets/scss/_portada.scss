@@ -1,0 +1,30 @@
+//Extensiones
+%fixed-backgrounds{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-image: url("../../img/portada.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+}
+/*Portada Principal*/
+.portada-container{
+    @extend %fixed-backgrounds;
+    height: 40rem;
+    
+    .portada-logo{
+        display: flex;
+        width: 40%;
+        filter: drop-shadow(3px 3px 6px black);
+
+        @media (max-width: 700px){
+            width: 60%;
+        }
+    }
+
+    @media (max-width: 700px){
+        height: 15rem;
+    }
+}

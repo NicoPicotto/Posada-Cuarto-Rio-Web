@@ -1,0 +1,78 @@
+//Import colores
+@import "colores";
+
+/*Header*/
+.nav{
+    background-color: $color-primario;
+    color: white;
+    height: 4em;
+
+    .nav__container{
+        display: flex;
+        height: 100%;
+        width: 100%;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+
+        .nav__logo{
+            align-items: center;
+            margin-left: 1em;
+        }
+
+        .nav__input{
+            display: none;
+
+            &:checked + .nav__menu{
+                clip-path: inset(0 0 0 0);
+            }
+        }
+
+        .nav__label{
+            display: none;
+
+            @media (max-width: 700px){
+                display: block;
+                cursor: pointer;
+            }
+        }
+
+        .nav__menu{
+            display: flex;
+            transition: clip-path 0.5s ease-in-out;
+            height: fit-content;
+
+            .nav__item{
+                color: white;
+                font-size: 1.2em;
+                font-weight: bold;
+                text-decoration: none;
+                transition: 0.3s;
+                display: flex;
+                height: 100%;
+                align-items: center;
+                padding: 1em;
+
+                &:hover{
+                    background-color: $color-secundario;
+                    color: $color-primario;
+                }
+            }
+
+            @media (max-width: 700px){
+                position: fixed;
+                top: 4em;
+                bottom: 0;
+                background-color: $color-primario;
+                color: $color-secundario;
+                width: 100%;
+                left: 0;
+                justify-content: space-evenly;
+                flex-direction: column;
+                align-items: center;
+                clip-path: inset(0 0 100% 0);
+            }
+        }
+
+    }
+}

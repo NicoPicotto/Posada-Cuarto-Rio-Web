@@ -1,0 +1,15 @@
+//Import Portada Principal
+@import "portada";
+
+/*Portadas Secciones*/
+
+.portada-container-secciones{
+        @extend %fixed-backgrounds;
+        height: 10rem;
+
+        h1{
+            color: white;
+            font-size: 6rem;
+            text-shadow: 2px 2px 7px rgb(34, 34, 34), -2px -2px 7px rgb(34, 34, 34);
+        }
+}

@@ -1,0 +1,366 @@
+body {
+  background-color: #977863;
+  font-family: "MedievalSharp", cursive;
+}
+
+/*Header*/
+.nav {
+  background-color: #732720;
+  color: white;
+  height: 4em;
+}
+.nav .nav__container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav .nav__container .nav__logo {
+  align-items: center;
+  margin-left: 1em;
+}
+.nav .nav__container .nav__input {
+  display: none;
+}
+.nav .nav__container .nav__input:checked + .nav__menu {
+  clip-path: inset(0 0 0 0);
+}
+.nav .nav__container .nav__label {
+  display: none;
+}
+@media (max-width: 700px) {
+  .nav .nav__container .nav__label {
+    display: block;
+    cursor: pointer;
+  }
+}
+.nav .nav__container .nav__menu {
+  display: flex;
+  transition: clip-path 0.5s ease-in-out;
+  height: fit-content;
+}
+.nav .nav__container .nav__menu .nav__item {
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  padding: 1em;
+}
+.nav .nav__container .nav__menu .nav__item:hover {
+  background-color: #e6b67b;
+  color: #732720;
+}
+@media (max-width: 700px) {
+  .nav .nav__container .nav__menu {
+    position: fixed;
+    top: 4em;
+    bottom: 0;
+    background-color: #732720;
+    color: #e6b67b;
+    width: 100%;
+    left: 0;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    clip-path: inset(0 0 100% 0);
+  }
+}
+
+.portada-container-secciones, .portada-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-image: url("../../img/portada.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
+}
+
+/*Portada Principal*/
+.portada-container {
+  height: 40rem;
+}
+.portada-container .portada-logo {
+  display: flex;
+  width: 40%;
+  filter: drop-shadow(3px 3px 6px black);
+}
+@media (max-width: 700px) {
+  .portada-container .portada-logo {
+    width: 60%;
+  }
+}
+@media (max-width: 700px) {
+  .portada-container {
+    height: 15rem;
+  }
+}
+
+.menu-container .second-row, .menu-container .first-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+}
+@media (max-width: 700px) {
+  .menu-container .second-row, .menu-container .first-row {
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+  }
+}
+
+.menu-container .second-row .streams, .menu-container .second-row .libros, .menu-container .first-row .razas, .menu-container .first-row .clases {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: 0.2s ease;
+  background-position: center;
+  filter: contrast(85%);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center top;
+}
+@media (max-width: 700px) {
+  .menu-container .second-row .streams, .menu-container .second-row .libros, .menu-container .first-row .razas, .menu-container .first-row .clases {
+    width: 100%;
+    height: 50%;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.menu-container .second-row .streams h1, .menu-container .second-row .libros h1, .menu-container .first-row .razas h1, .menu-container .first-row .clases h1 {
+  font-size: 4vw;
+  color: white;
+  text-shadow: 2px 2px 7px black, -2px -2px 7px black;
+}
+@media (max-width: 700px) {
+  .menu-container .second-row .streams h1, .menu-container .second-row .libros h1, .menu-container .first-row .razas h1, .menu-container .first-row .clases h1 {
+    font-size: 12vw;
+  }
+}
+
+.menu-container .second-row .streams:hover, .menu-container .second-row .libros:hover, .menu-container .first-row .razas:hover, .menu-container .first-row .clases:hover {
+  filter: brightness(130%) contrast(100%);
+  transform: scale(1.01);
+}
+
+/*Menu Principal*/
+.menu-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  height: 60rem;
+}
+.menu-container .first-row .clases {
+  background-image: url("../../img/clases.jpg");
+}
+.menu-container .first-row .razas {
+  background-image: url("../../img/razas.jpg");
+}
+.menu-container .second-row .libros {
+  background-image: url("../../img/libros.jpg");
+}
+.menu-container .second-row .streams {
+  background-image: url("../../img/streams.jpg");
+}
+.footer-container .social-container .fa .fa-facebook, .footer-container .social-container .fa .fa-twitter, .footer-container .social-container .fa .fa-instagram {
+  width: 100%;
+  background-color: #732720;
+  color: #d8d8d8;
+  transition: 0.2s;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  height: fit-content;
+  flex-direction: column;
+}
+.footer-container .social-container {
+  display: flex;
+  background-color: #732720;
+  width: 100%;
+  height: 4rem;
+  justify-content: center;
+  align-items: center;
+}
+.footer-container .social-container .fa {
+  font-size: 1em;
+  padding: 1.5em;
+  width: 5em;
+  height: fit-content;
+  text-align: center;
+  text-decoration: none;
+  align-items: center;
+  justify-items: center;
+  color: white;
+  transition: 0.3s;
+}
+.footer-container .social-container .fa:hover {
+  background-color: #e6b67b;
+  color: #732720;
+}
+.footer-container .copy-container {
+  display: flex;
+  width: 100%;
+  height: 2rem;
+  align-items: center;
+  justify-content: center;
+  background-color: #5e1b15;
+}
+.footer-container .copy-container h3 {
+  font-size: 0.8em;
+  color: white;
+  line-height: 0;
+  margin: 0;
+}
+
+.portada-container-secciones, .portada-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-image: url("../../img/portada.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
+}
+
+/*Portada Principal*/
+.portada-container {
+  height: 40rem;
+}
+.portada-container .portada-logo {
+  display: flex;
+  width: 40%;
+  filter: drop-shadow(3px 3px 6px black);
+}
+@media (max-width: 700px) {
+  .portada-container .portada-logo {
+    width: 60%;
+  }
+}
+@media (max-width: 700px) {
+  .portada-container {
+    height: 15rem;
+  }
+}
+
+/*Portadas Secciones*/
+.portada-container-secciones {
+  height: 10rem;
+}
+.portada-container-secciones h1 {
+  color: white;
+  font-size: 6rem;
+  text-shadow: 2px 2px 7px #222222, -2px -2px 7px #222222;
+}
+
+/*Nosotros*/
+.nosotros-container {
+  display: flex;
+  display: 90%;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.nosotros-container .card {
+  display: flex;
+  width: 25%;
+  height: fit-content;
+  background-color: #732720;
+  padding: 0.5em;
+  justify-content: center;
+}
+@media (max-width: 700px) {
+  .nosotros-container .card {
+    flex-wrap: nowrap;
+    display: block;
+    width: 100%;
+    justify-content: center;
+    padding: 0.5em 0.5em;
+  }
+}
+.nosotros-container .card .card-title {
+  font-size: 2vw;
+}
+@media (max-width: 700px) {
+  .nosotros-container .card .card-title {
+    padding: 0.2em 0.2em;
+    font-size: 3em;
+  }
+}
+.nosotros-container .card .card-text {
+  font-size: 0.5vw;
+}
+.nosotros-container .card ul {
+  color: #d8d8d8;
+}
+@media (max-width: 700px) {
+  .nosotros-container .card ul {
+    padding: 0.2em 0.2em;
+    font-size: 4vw;
+  }
+}
+.nosotros-container .card .btn {
+  background-color: #d8d8d8;
+  color: #732720;
+  border: 0;
+  transition: 0.2s;
+  border-radius: 0;
+}
+.nosotros-container .card .btn:hover {
+  background-color: #e6b67b;
+  color: #732720;
+}
+@media (max-width: 700px) {
+  .nosotros-container .card {
+    height: 100%;
+    margin-bottom: 0.5em;
+  }
+}
+@media (max-width: 700px) {
+  .nosotros-container {
+    flex-wrap: nowrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em 1em;
+  }
+}
+
+/*Boton Volver*/
+.inicioboton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.inicioboton .inicio {
+  text-decoration: none;
+  background-color: #732720;
+  color: #d8d8d8;
+  font-size: 1em;
+  font-weight: bolder;
+  padding: 0.7em 0.7em;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.inicioboton .inicio:hover {
+  color: #732720;
+  background-color: #e6b67b;
+}
+
+/*# sourceMappingURL=style.css.map */
