@@ -1,8 +1,7 @@
 //Import colores y cards
 @import "colores";
-@import "nosotros";
 
-/*Razas*/
+/*Portadas de secciones*/
 .portadas-contenedor{
     display: flex;
     width: 100%;
@@ -15,17 +14,22 @@
         transition: 0.3s;
 
         &:hover{
-            filter: brightness(150%);
+            filter: brightness(180%);
             transform: scale(1.02);
             box-shadow: 0 0 0.5em 0.5em rgba(0.2, 0.2, 0.2, 0.2);
-        }
+        }   
     }
 
+    a{
+      width: 100%;
+    }
+    
     @media (max-width: 700px) {
         flex-flow: wrap;
   }
 }
 
+/*Razas*/
 .razas{
     display: flex;
     justify-content:space-evenly;

@@ -1,0 +1,82 @@
+//Import colores
+@import "colores";
+
+//Extensiones libros
+%libros-general{
+    display: flex;
+    flex-direction: column;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+//Operacion de Size
+$ancho-libros: 24rem;
+$alto-libros: 3rem;
+
+/*Libros*/
+.librospadre{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-content: center;
+    flex-wrap: wrap;
+
+    .libros__oficiales{
+        @extend %libros-general;
+      }
+
+      .libros__aventuras{
+        @extend %libros-general;
+      }
+      
+      .libros__extras{
+        @extend %libros-general;
+      }
+
+      .libros__titulos{
+        display: flex;
+        justify-content: center;
+        width: $ancho-libros;
+        height: $alto-libros*2;
+        background-color: $color-primario;
+        font-size: 1.5em;
+        color: $color-terciario;
+        text-align: center;
+        font-weight: bolder;
+        flex-wrap: nowrap;
+        align-items: center;
+        margin-bottom: 0.2em;
+      }
+
+      .libros__contenido{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0.1em;
+        margin-bottom: 0.1em;
+        text-decoration: none;
+        width: $ancho-libros;
+        height: $alto-libros;
+        background-color: $color-terciario;
+        font-size: 1.1em;
+        color: $color-primario;
+        text-align: center;
+        transition: 0.1s;
+        &:hover{
+            background-color:$color-secundario;
+            color: $color-primario;
+            transform: scale(1.02);
+            font-weight: bold;
+            box-shadow: 0 0 0.2em 0.1em rgba(0.2, 0.2, 0.2, 0.2);
+        }
+     }
+
+     @media (max-width: 700px) {
+      padding: 1rem 1rem;
+      width: 100%;
+   }
+}
+
