@@ -75,8 +75,10 @@ $alto-libros: 3rem;
      }
 
      @media (max-width: 700px) {
-      padding: 1rem 1rem;
-      width: 100%;
+      width: 90%;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      overflow: hidden;
    }
 }
 

@@ -40,6 +40,7 @@ body {
   display: flex;
   transition: clip-path 0.5s ease-in-out;
   height: fit-content;
+  z-index: 1000;
 }
 .nav .nav__container .nav__menu .nav__item {
   color: white;
@@ -304,7 +305,7 @@ body {
 @media (max-width: 700px) {
   .cards-container .card .card-title {
     padding: 0.2em 0.2em;
-    font-size: 3em;
+    font-size: 7vw;
   }
 }
 .cards-container .card .card-text {
@@ -645,8 +646,10 @@ body {
 }
 @media (max-width: 700px) {
   .librospadre {
-    padding: 1rem 1rem;
-    width: 100%;
+    width: 90%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    overflow: hidden;
   }
 }
 
