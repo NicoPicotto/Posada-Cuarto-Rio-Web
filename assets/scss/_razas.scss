@@ -32,7 +32,7 @@
 /*Razas*/
 .razas{
     display: flex;
-    justify-content:space-evenly;
+    justify-content:center;
     width: 100%;
 
     .navegacion{
@@ -47,7 +47,7 @@
         
         .razas-foto{
           display: flex;
-          height: fit-content;
+          height: 34rem;
           align-items: center;
           flex-direction: column;
           border-style: solid;
@@ -100,6 +100,9 @@
           .tab-pane{
             background-color: $color-terciario;
             padding: 0.5em;
+            font-family: 'Signika Negative', sans-serif;
+            height: 31.5rem;
+            overflow: scroll;
           }
           
           span{

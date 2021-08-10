@@ -8,11 +8,20 @@
 
     .formulario{
         display: inline-block;
+        font-family: 'Signika Negative', sans-serif;
         justify-content: center;
         align-items: center;
         width: 50%;
         background-color: $color-primario;
         padding: 1.5em;
+
+        h1{
+            width: 100%;
+            display: flex;
+            color: white;
+            font-family: 'MedievalSharp', cursive;
+            font-size: 1.5rem;
+        }
     
         .form-title{
             display: flex;
@@ -58,6 +67,7 @@
         }
     
         .btn{
+            font-family: 'MedievalSharp', cursive;
             background-color: $color-terciario;
             color: $color-primario;
             border: 0;

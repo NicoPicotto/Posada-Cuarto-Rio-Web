@@ -14,6 +14,10 @@
         background-color: $color-primario;
         padding: 0.5em;
         justify-content: center;
+
+        p{
+          font-family: 'Signika Negative', sans-serif;
+        }
   
         @media (max-width: 700px) {
           flex-wrap: nowrap;
@@ -23,28 +27,55 @@
           padding: 0.5em 0.5em;
           margin-bottom: 1em;
         }
-  
-         .btn{
-            background-color: $color-terciario;
-            color: $color-primario;
-            border: 0;
-            transition: 0.2s;
-            border-radius: 0;
-  
-            &:hover{
-                background-color: $color-secundario;
-                color: $color-primario;
-              }
-          }
-  
-        }
-  
-        @media (max-width: 700px) {
-            flex-wrap: nowrap;
+
+        .container-tarjetas{
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          
+          height: fit-content;
+          align-content: center;
+          padding: 0 0;
+
+          .tarjeta{
             display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding: 1em 1em;
+            flex-direction: row;
+            justify-content: space-between;
+            height: 100%;
+            width: 100%;
+            align-items: center;
+            margin-bottom: 0.5rem;
+            background-color: $color-terciario;
+            
+            img{
+              margin-left: 0.5rem;
+              display: flex;
+              width: 3rem;
+            }            
+            
+            .btn{
+              background-color: $color-terciario;
+              color: $color-primario;
+              border: 0;
+              transition: 0.2s;
+              border-radius: 0;
+              height: 100%;
+              font-family: 'Signika Negative', sans-serif;
+    
+              &:hover{
+                  background-color: $color-secundario;
+                  color: $color-primario;
+                }
+            }
           }
+        }
+      }
   
-    }
+    @media (max-width: 700px) {
+        flex-wrap: nowrap;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1em 1em;
+      }
+}

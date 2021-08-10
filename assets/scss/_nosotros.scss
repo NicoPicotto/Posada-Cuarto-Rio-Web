@@ -2,77 +2,73 @@
 @import "colores";
 
 /*Nosotros*/
-  .cards-container{
+.cards-container{
       display: flex;
       display: 90%;
       flex-direction: row;
       justify-content: space-evenly;
   
-      .card{
-          display: flex;
-          width: 25%;
-          height: fit-content;
-          background-color: $color-primario;
-          padding: 0.5em;
-          justify-content: center;
-  
-          @media (max-width: 700px) {
-            flex-wrap: nowrap;
-            display: block;
-            width: 100%;
+        .card{
+            display: flex;
+            width: 25%;
+            height: fit-content;
+            background-color: $color-primario;
+            padding: 0.5em;
             justify-content: center;
-            padding: 0.5em 0.5em;
-          }
-         
-          .card-title{
-            font-size: 2vw;
-  
+    
             @media (max-width: 700px) {
-              padding: 0.2em 0.2em;
-              font-size: 7vw;
+              flex-wrap: nowrap;
+              display: block;
+              width: 100%;
+              justify-content: center;
+              padding: 0.5em 0.5em;
             }
-  
-          }
-  
-          .card-text{
-            font-size: 0.5vw;
-          }
-  
-          ul{
-              color: $color-terciario;
-  
+          
+            .card-title{
+              font-size: 2vw;
+    
               @media (max-width: 700px) {
                 padding: 0.2em 0.2em;
-                font-size: 4vw;
+                font-size: 7vw;
               }
+    
             }
-  
-           .btn{
-              background-color: $color-terciario;
-              color: $color-primario;
-              border: 0;
-              transition: 0.2s;
-              border-radius: 0;
-  
-              &:hover{
-                  background-color: $color-secundario;
-                  color: $color-primario;
+    
+              ul{
+                font-family: 'Signika Negative', sans-serif;
+                color: $color-terciario; 
+                
+                  @media (max-width: 700px) {
+                    padding: 0.2em 0.2em;
+                    font-size: 4vw;
+                  }
+               }
+
+            .btn{
+                background-color: $color-terciario;
+                color: $color-primario;
+                border: 0;
+                transition: 0.2s;
+                border-radius: 0;
+    
+                &:hover{
+                    background-color: $color-secundario;
+                    color: $color-primario;
                 }
-  
+    
             }
-  
+    
             @media (max-width: 700px) {
               height: 100%;
               margin-bottom: 0.5em;
-             }
+            }
+        }
   
-      }
-  
-      @media (max-width: 700px) {
-        flex-wrap: nowrap;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 1em 1em;
-      }
-  }
+    @media (max-width: 700px) {
+      flex-wrap: nowrap;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 1em 1em;
+    }
+}
