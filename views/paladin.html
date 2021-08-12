@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Estilos Boostrap y CSS-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="../assets/css/style.css">
+	<!-- Descripcion-->
+	<meta name="description" content="Todas las clases de D&D y sus características más importantes.">
+	<!-- Key Words-->
+	<meta name="keywords" content="calabozos, dragones, juego de mesa, dungeons, dragons, recursos, libros, D&D, roll">
+	<!-- Icono del sitio-->
+	<link rel="shortcut icon" href="../img/icono.ico" type="image/x-icon">
+	<!-- Titulo de esta pagina-->
+	<title>Posada del Cuarto Río | Todo sobre las clases de D&D y sus pecualiaridades</title>
+</head>
+<body>
+	<!-- HEADER-->
+	<header>
+		<nav class="nav">
+			<div class="nav__container">
+				<div class="nav__logo">
+					<a href="../index.html"><img src="../img/logomini.png" alt="Logo Posada"></a>
+				</div>
+				<label for="menu" class="nav__label">
+					<img src="../assets/svg/menu.svg" alt="Hamburguesa" class="nav__img">
+				</label>
+				<input type="checkbox" name="Hamburguesa" id="menu" class="nav__input">
+
+				<div class="nav__menu">
+					<a href="nosotros.html" class="nav__item">Nosotros</a>
+					<a href="apoyanos.html" class="nav__item">Apoyanos</a>
+					<a href="contacto.html" class="nav__item">Contacto</a>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!--PORTADA PRINCIPAL-->
+	<div class="portada-container-secciones">
+		<h1>Clases</h1>
+	</div>
+	<!--PORTADAS CLASES-->
+    <div class="portadas-contenedor">
+		<a href="barbaro.html"><img src="../img/clases-portada-barbaro.jpg" alt="Portada Barbaro" class="portadas-seccion"></a>
+		<a href="bardo.html"><img src="../img/clases-portada-bardo.jpg" alt="Portada Bardo" class="portadas-seccion"></a>
+		<a href="brujo.html"><img src="../img/clases-portada-brujo.jpg" alt="Portada Brujo" class="portadas-seccion"></a>
+		<a href="clerigo.html"><img src="../img/clases-portada-clerigo.jpg" alt="Porda Clerigo" class="portadas-seccion"></a>
+	</div>
+	<div class="portadas-contenedor">
+		<a href="druida.html"><img src="../img/clases-portada-druida.jpg" alt="Portada Druida" class="portadas-seccion"></a>
+		<a href="explorador.html"><img src="../img/clases-portada-explorador.jpg" alt="Portada Explorador" class="portadas-seccion"></a>
+		<a href="guerrero.html"><img src="../img/clases-portada-guerrero.jpg" alt="Portada Guerero" class="portadas-seccion"></a>
+		<a href="hechicero.html"><img src="../img/clases-portada-hechicero.jpg" alt="Portada Hechicero" class="portadas-seccion"></a>
+	</div>
+    <div class="portadas-contenedor">
+		<a href="mago.html"><img src="../img/clases-portada-mago.jpg" alt="Portada Mago" class="portadas-seccion"></a>
+		<a href="monje.html"><img src="../img/clases-portada-monje.jpg" alt="Portada Monje" class="portadas-seccion"></a>
+		<a href="paladin.html"><img src="../img/clases-portada-paladin.jpg" alt="Portada Paladin" class="portadas-seccion"></a>
+		<a href="picaro.html"><img src="../img/clases-portada-picaro.jpg" alt="Portada Picaro" class="portadas-seccion"></a>
+	</div>
+    <br>
+    <!--CONTENIDO CLASES-->
+    <main class="razas">
+        <div class="razas-foto">
+            <img src="../img/clases-individual-paladin.png" alt="Foto Individual Paladin">
+			<div class="nombre">Paladín</div>
+		</div>
+		<div class="navegacion">
+		<nav class="nav nav-pills" id="pills-tab" role="tablist">
+			<a class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Rasgos de clase</a>
+			<a class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" href="#pills-subrazas" role="tab" aria-controls="pills-profile" aria-selected="false">Tabla por nivel</a>
+			<a class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" href="#pills-clases" role="tab" aria-controls="pills-profile" aria-selected="false">Características</a>
+			<a class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" href="#pills-nombres" role="tab" aria-controls="pills-profile" aria-selected="false">Conjuros</a>
+		  </nav>
+		  <div class="tab-content" id="pills-tabContent">
+			<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+				<p><span>PUNTOS DE GOLPE</span></p>
+                <p>	Dados de golpe: 1d10 por nivel de paladín.	</p>
+                <p>	Puntos de golpe a nivel 1: 10 + tu modificador por Constitución	</p>
+                <p>	Puntos de golpe a niveles superiores: 1d10 (o 6) + tu modificador por Constitución por nivel de paladín después del nivel 1	</p>
+                
+				<p><span>COMPETENCIAS</span></p>
+                <p>	Armadura: Todas las armaduras, escudos	</p>
+                <p>	Armas: Armas sencillas, armas marciales	</p>
+                <p>	Herramientas: Ninguna	</p>
+                <p>	Tiradas de salvación: Sabiduría, Carisma	</p>
+                <p>	Habilidades: Elige dos entre Atletismo, Intimidar, Medicina, Perspicacia, Persuasión y Religión	</p>
+                
+				<p><span>EQUIPO</span></p>
+                <p>	Empiezas con el siguiente equipo, además del equipo que te concede tu trasfondo:	</p>
+                <p>	Un arma marcial y un escudo o (b) dos armas marciales.	</p>
+                <p>	Cinco jabalinas o (b) un arma de combate cuerpo a cuerpo sencilla.	</p>
+                <p>	Un pack de sacerdote o (b) un pack de explorador.	</p>
+                <p>	Cota de mallas y un símbolo sagrado.	</p>
+                
+        	</div>
+			<div class="tab-pane fade" id="pills-subrazas" role="tabpanel" aria-labelledby="pills-subrazas-tab">
+				<table class="tftable" border="1">
+					<tr><th>Nivel</th><th>Bonif. de Competencia</th><th>Rasgos</th><th>Conjuros del nivel 1 al 5</th></tr>
+                       <tr><td>1</td><td>	+2	</td><td>	Sentido Divino, Imposición de Manos	</td><td>	–/–/–/–/–	</td></tr>
+                       <tr><td>2</td><td>	+2	</td><td>	Estilo de Combate, Lanzamiento de Conjuros, Castigo Divino	</td><td>	2/–/–/–/–	</td></tr>
+                       <tr><td>3</td><td>	+2	</td><td>	Salud Divina, Juramento Sagrado	</td><td>	3/–/–/–/–	</td></tr>
+                       <tr><td>4</td><td>	+2	</td><td>	Mejora de Característica	</td><td>	3/–/–/–/–	</td></tr>
+                       <tr><td>5</td><td>	+3	</td><td>	Ataque Adicional	</td><td>	4/2/–/–/–	</td></tr>
+                       <tr><td>6</td><td>	+3	</td><td>	Aura de Protección	</td><td>	4/2/–/–/–	</td></tr>
+                       <tr><td>7</td><td>	+3	</td><td>	Rasgo de Juramento Sagrado	</td><td>	4/3/–/–/–	</td></tr>
+                       <tr><td>8</td><td>	+3	</td><td>	Mejora de Característica	</td><td>	4/3/–/–/–	</td></tr>
+                       <tr><td>9</td><td>	+4	</td><td>	–	</td><td>	4/3/2/–/–	</td></tr>
+                       <tr><td>10</td><td>	+4	</td><td>	Aura de Coraje	</td><td>	4/3/2/–/–	</td></tr>
+                       <tr><td>11</td><td>	+4	</td><td>	Castigo Divino Mejorado	</td><td>	4/3/3/–/–	</td></tr>
+                       <tr><td>12</td><td>	+4	</td><td>	Mejora de Característica	</td><td>	4/3/3/–/–	</td></tr>
+                       <tr><td>13</td><td>	+5	</td><td>	–	</td><td>	4/3/3/1/–	</td></tr>
+                       <tr><td>14</td><td>	+5	</td><td>	Toque Purificador	</td><td>	4/3/3/1/–	</td></tr>
+                       <tr><td>15</td><td>	+5	</td><td>	Rasgo de Juramento Sagrado	</td><td>	4/3/3/2/–	</td></tr>
+                       <tr><td>16</td><td>	+5	</td><td>	Mejora de Característica	</td><td>	4/3/3/2/–	</td></tr>
+                       <tr><td>17</td><td>	+6	</td><td>	–	</td><td>	4/3/3/3/1	</td></tr>
+                       <tr><td>18</td><td>	+6	</td><td>	Mejoras de Auras	</td><td>	4/3/3/3/1	</td></tr>
+                       <tr><td>19</td><td>	+6	</td><td>	Mejora de Característica	</td><td>	4/3/3/3/2	</td></tr>
+                       <tr><td>20</td><td>	+6	</td><td>	Rasgo de Juramento Sagrado	</td><td>	4/3/3/3/2	</td></tr>
+                    
+                    
+                </table>
+			</div>
+			<div class="tab-pane fade" id="pills-clases" role="tabpanel" aria-labelledby="pills-clases-tab">
+                <p><span>	SENTIDO DIVINO	</span></p>
+                <p>	Para tus sentidos, la presencia de un gran mal se percibe como un hedor nocivo, mientras que un bien poderoso es como música celestial. Como acción, puedes abrir tus sentidos para detectar tales fuerzas. Hasta el final de tu siguiente turno, sabes dónde se encuentra cualquier celestial, infernal o no muerto que esté a menos de 60 pies de ti y que no esté completamente cubierto. Sabes de qué tipo es (celestial, infernal o no muerto), pero no su identidad (el vampiro conde Strahd von Zarovich, por ejemplo). Dentro del mismo radio, también puedes detectar la presencia de cualquier lugar u objeto que haya sido bendecido o desacralizado, como con el conjuro Sacralizar.	</p>
+                <p>	Puedes usar este rasgo un número de veces igual a 1 + tu modificador por Carisma. Cuando termines un descanso prolongado, recuperas todos los usos que hayas gastado.	</p>
+                
+
+                <p><span>	IMPOSICIÓN DE MANOS	</span></p>
+                <p>	Tu toque sagrado puede curar heridas. Tienes una reserva de poder curativo que se recupera cuando terminas un descanso prolongado. Con dicha reserva, puedes recuperar un número de puntos de golpe igual a tu nivel de paladín multiplicado por 5.	</p>
+                <p>	Como acción, puedes tocar a una criatura y extraer poder de la reserva para hacer que esta recupere puntos de golpe hasta la cantidad máxima que quede en tu reserva.	</p>
+                <p>	De forma alternativa, puedes gastar 5 puntos de golpe de tu reserva de curación para curar al objetivo de una enfermedad o neutralizar el veneno que le afecta. Puedes curar varias enfermedades y neutralizar varios venenos con un único uso de Imposición de manos gastando puntos de golpe independientes para cada uno.	</p>
+                <p>	Este rasgo no afecta ni a los no muertos ni a los constructos.	</p>
+                
+
+                <p><span>	PREPARAR Y LANZAR CONJUROS	</span></p>
+                <p>	La tabla del paladín muestra cuántos espacios de conjuro tienes para lanzar tus conjuros. Para hacerlo, debes gastar un espacio del mismo nivel que el conjuro o superior. Recuperas todos los espacios de conjuro gastados cuando termines un descanso prolongado.	</p>
+                <p>	Tú preparas la lista de conjuros que puedes lanzar: elige un número de conjuros de paladín igual a tu modificador por Carisma + la mitad de tu nivel de paladín, redondeando hacia abajo (mínimo un conjuro). Los conjuros deben ser de un nivel para el cual tengas espacios de conjuro.	</p>
+                <p>	Por ejemplo, si eres un paladín de nivel 5, tendrás cuatro espacios de conjuro de nivel 1, y dos de nivel 2. Con Carisma 14, tu lista de conjuros preparados puede incluir cuatro conjuros de nivel 1 o 2, en cualquier combinación. Si preparas el conjuro de nivel 1 Curar heridas, puedes lanzarlo usando espacios de nivel 1 o 2. Lanzar un conjuro no hace que se elimine de tu lista de conjuros preparados.	</p>
+                <p>	Puedes cambiar tu lista de conjuros preparados durante un descanso prolongado. Preparar una nueva lista de conjuros de paladín requiere pasar tiempo orando y meditando, al menos 1 minuto por nivel de conjuro para cada uno de los conjuros de tu lista.	</p>
+                
+
+                <p><span>	CARACTERÍSTICA PARA LANZAR CONJUROS	</span></p>
+                <p>	La característica con la que lanzas tus conjuros de paladín es Carisma, dado que tu poder proviene de la fuerza de tus convicciones. Además, usas tu modificador por Carisma para establecer la CD de la tirada de salvación de los conjuros de paladín que lances y cuando haces una tirada de ataque con uno.	</p>
+                <p>	CD de la salvación de conjuro = 8 + tu bonificador por competencia + tu modificador por Carisma	</p>
+                <p>	Modificador al ataque con conjuros = tu bonificador por competencia + tu modificador por Carisma	</p>
+                
+
+                <p><span>	CASTIGO DIVINO	</span></p>
+                <p>	A partir del nivel 2, cuando impactes a una criatura con un ataque de arma cuerpo a cuerpo, puedes gastar un espacio de conjuro para infligir daño radiante al objetivo además del daño del arma. El daño adicional es 2d8 si el espacio de conjuro es de nivel 1, más 1d8 por cada nivel de conjuro mayor de 1, hasta un máximo de 5d8. El daño aumenta en 1d8 si el objetivo es un no muerto o un infernal.	</p>
+                
+			</div>
+			<div class="tab-pane fade" id="pills-nombres" role="tabpanel" aria-labelledby="pills-nombres-tab">
+                <p><span>	Nivel 1	</span></p>
+                <p>	Bendecir 	</p>
+                <p>	Curar heridas 	</p>
+                <p>	Detectar el mal y el bien 	</p>
+                <p>	Detectar magia 	</p>
+                <p>	Detectar venenos y enfermedades 	</p>
+                <p>	Escudo de fe 	</p>
+                <p>	Favor divino 	</p>
+                <p>	Heroísmo 	</p>
+                <p>	Orden imperiosa 	</p>
+                <p>	Protección contra el bien y el mal 	</p>
+                <p>	Purificar comida y bebida 	</p>
+                <p><span>	Nivel 2	</span></p>
+                <p>	Arma mágica 	</p>
+                <p>	Auxilio 	</p>
+                <p>	Castigo marcador 	</p>
+                <p>	Hallar corcel 	</p>
+                <p>	Localizar objeto 	</p>
+                <p>	Protección contra veneno 	</p>
+                <p>	Restablecimiento menor 	</p>
+                <p>	Zona de verdad 	</p>
+                <p><span>	Nivel 3	</span></p>
+                <p>	Círculo mágico 	</p>
+                <p>	Crear comida y agua 	</p>
+                <p>	Disipar magia 	</p>
+                <p>	Levantar maldición 	</p>
+                <p>	Luz del día 	</p>
+                <p>	Revivir 	</p>
+                <p><span>	Nivel 4	</span></p>
+                <p>	Destierro 	</p>
+                <p>	Guardia contra la muerte 	</p>
+                <p>	Localizar criatura 	</p>
+                <p><span>	Nivel 5	</span></p>
+                <p>	Alzar a los muertos 	</p>
+                <p>	Disipar el bien y el mal 	</p>
+                <p>	Geas 	</p>
+                <p>	Texto ilusorio 	</p>
+                <p>	Zancada prodigiosa 	</p>                
+                
+			</div>
+		  </div>
+		</div>
+	</main>
+    <br>
+    <div class="inicioboton">
+        <a href="../index.html" class="inicio">VOLVER AL INICIO</a>
+    </div>
+        <br>
+	<!--FOOTER-->
+	<footer class="footer-container">
+		<div class="social-container">
+			<a href="https://www.facebook.com/PosadaDelCuartoRio/" class="fa fa-facebook"></a>
+			<a href="https://twitter.com/posadadel4torio" class="fa fa-twitter"></a>
+			<a href="https://www.instagram.com/posadadelcuartorio/" class="fa fa-instagram"></a>
+		</div>
+		<div class="copy-container">
+			<h3>Copyright © Todos los derechos reservados</h3>
+		</div>
+	</footer>
+
+<!-- BOOTSTRAP LIKNS DINÁMICOS -->
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+
+</body>
+</html>
