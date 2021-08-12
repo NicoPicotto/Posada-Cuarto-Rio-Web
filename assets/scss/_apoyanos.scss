@@ -3,17 +3,19 @@
 
 /*Apoyanos*/
 .pagos {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+  display: flex;
+  display: 90%;
+  flex-direction: row;
+  justify-content: space-evenly;
   
       .card{
         display: flex;
-        width: 18%;
+        width: 20%;
         height: fit-content;
         background-color: $color-primario;
         padding: 0.5em;
-        justify-content: center;
+        justify-items: center;
+        border-radius: 0;
 
         p{
           font-family: 'Signika Negative', sans-serif;
@@ -28,47 +30,25 @@
           margin-bottom: 1em;
         }
 
-        .container-tarjetas{
-          display: flex;
-          flex-direction: column;
-          width: 100%;
-          
-          height: fit-content;
-          align-content: center;
-          padding: 0 0;
+        .boton-plataforma{
+          margin-top: 1rem;
 
-          .tarjeta{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            height: 100%;
-            width: 100%;
-            align-items: center;
-            margin-bottom: 0.5rem;
+          .btn{
             background-color: $color-terciario;
-            
-            img{
-              margin-left: 0.5rem;
-              display: flex;
-              width: 3rem;
-            }            
-            
-            .btn{
-              background-color: $color-terciario;
-              color: $color-primario;
-              border: 0;
-              transition: 0.2s;
-              border-radius: 0;
-              height: 100%;
-              font-family: 'Signika Negative', sans-serif;
-    
-              &:hover{
-                  background-color: $color-secundario;
-                  color: $color-primario;
-                }
-            }
+            color: $color-primario;
+            border: 0;
+            transition: 0.2s;
+            border-radius: 0;
+            height: 100%;
+            font-family: 'Signika Negative', sans-serif;
+  
+            &:hover{
+                background-color: $color-secundario;
+                color: $color-terciario;
+              }
           }
         }
+        
       }
   
     @media (max-width: 700px) {

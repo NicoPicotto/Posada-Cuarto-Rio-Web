@@ -1,11 +1,11 @@
 body {
-  background-color: #977863;
+  background-color: #594848;
   font-family: "MedievalSharp", cursive;
 }
 
 /*Header*/
 .nav {
-  background-color: #732720;
+  background-color: #491401;
   color: white;
   height: 4em;
 }
@@ -54,16 +54,16 @@ body {
   padding: 1em;
 }
 .nav .nav__container .nav__menu .nav__item:hover {
-  background-color: #e6b67b;
-  color: #732720;
+  background-color: #cacaca;
+  color: #491401;
 }
 @media (max-width: 700px) {
   .nav .nav__container .nav__menu {
     position: fixed;
     top: 4em;
     bottom: 0;
-    background-color: #732720;
-    color: #e6b67b;
+    background-color: #491401;
+    color: #b63c10;
     width: 100%;
     left: 0;
     justify-content: space-evenly;
@@ -179,8 +179,8 @@ body {
 }
 .footer-container .social-container .fa .fa-facebook, .footer-container .social-container .fa .fa-twitter, .footer-container .social-container .fa .fa-instagram {
   width: 100%;
-  background-color: #732720;
-  color: #d8d8d8;
+  background-color: #491401;
+  color: #cacaca;
   transition: 0.2s;
 }
 
@@ -192,7 +192,7 @@ body {
 }
 .footer-container .social-container {
   display: flex;
-  background-color: #732720;
+  background-color: #491401;
   width: 100%;
   height: 4rem;
   justify-content: center;
@@ -211,8 +211,8 @@ body {
   transition: 0.3s;
 }
 .footer-container .social-container .fa:hover {
-  background-color: #e6b67b;
-  color: #732720;
+  background-color: #cacaca;
+  color: #491401;
 }
 .footer-container .copy-container {
   display: flex;
@@ -220,7 +220,7 @@ body {
   height: 2rem;
   align-items: center;
   justify-content: center;
-  background-color: #5e1b15;
+  background-color: #2b0c01;
 }
 .footer-container .copy-container h3 {
   font-family: "Signika Negative", sans-serif;
@@ -286,9 +286,10 @@ body {
   display: flex;
   width: 25%;
   height: fit-content;
-  background-color: #732720;
+  background-color: #491401;
   padding: 0.5em;
   justify-content: center;
+  border-radius: 0;
 }
 @media (max-width: 700px) {
   .cards-container .card {
@@ -310,7 +311,7 @@ body {
 }
 .cards-container .card ul {
   font-family: "Signika Negative", sans-serif;
-  color: #d8d8d8;
+  color: #cacaca;
 }
 @media (max-width: 700px) {
   .cards-container .card ul {
@@ -319,15 +320,15 @@ body {
   }
 }
 .cards-container .card .btn {
-  background-color: #d8d8d8;
-  color: #732720;
+  background-color: #cacaca;
+  color: #491401;
   border: 0;
   transition: 0.2s;
   border-radius: 0;
 }
 .cards-container .card .btn:hover {
-  background-color: #e6b67b;
-  color: #732720;
+  background-color: #b63c10;
+  color: #cacaca;
 }
 @media (max-width: 700px) {
   .cards-container .card {
@@ -353,8 +354,8 @@ body {
 }
 .inicioboton .inicio {
   text-decoration: none;
-  background-color: #732720;
-  color: #d8d8d8;
+  background-color: #491401;
+  color: #cacaca;
   font-size: 1em;
   font-weight: bolder;
   padding: 0.7em 0.7em;
@@ -363,23 +364,25 @@ body {
   transition: 0.2s;
 }
 .inicioboton .inicio:hover {
-  color: #732720;
-  background-color: #e6b67b;
+  color: #491401;
+  background-color: #cacaca;
 }
 
 /*Apoyanos*/
 .pagos {
   display: flex;
+  display: 90%;
   flex-direction: row;
   justify-content: space-evenly;
 }
 .pagos .card {
   display: flex;
-  width: 18%;
+  width: 20%;
   height: fit-content;
-  background-color: #732720;
+  background-color: #491401;
   padding: 0.5em;
-  justify-content: center;
+  justify-items: center;
+  border-radius: 0;
 }
 .pagos .card p {
   font-family: "Signika Negative", sans-serif;
@@ -394,41 +397,21 @@ body {
     margin-bottom: 1em;
   }
 }
-.pagos .card .container-tarjetas {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: fit-content;
-  align-content: center;
-  padding: 0 0;
+.pagos .card .boton-plataforma {
+  margin-top: 1rem;
 }
-.pagos .card .container-tarjetas .tarjeta {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  height: 100%;
-  width: 100%;
-  align-items: center;
-  margin-bottom: 0.5rem;
-  background-color: #d8d8d8;
-}
-.pagos .card .container-tarjetas .tarjeta img {
-  margin-left: 0.5rem;
-  display: flex;
-  width: 3rem;
-}
-.pagos .card .container-tarjetas .tarjeta .btn {
-  background-color: #d8d8d8;
-  color: #732720;
+.pagos .card .boton-plataforma .btn {
+  background-color: #cacaca;
+  color: #491401;
   border: 0;
   transition: 0.2s;
   border-radius: 0;
   height: 100%;
   font-family: "Signika Negative", sans-serif;
 }
-.pagos .card .container-tarjetas .tarjeta .btn:hover {
-  background-color: #e6b67b;
-  color: #732720;
+.pagos .card .boton-plataforma .btn:hover {
+  background-color: #b63c10;
+  color: #cacaca;
 }
 @media (max-width: 700px) {
   .pagos {
@@ -451,7 +434,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 50%;
-  background-color: #732720;
+  background-color: #491401;
   padding: 1.5em;
 }
 .cont-form .formulario h1 {
@@ -463,8 +446,8 @@ body {
 }
 .cont-form .formulario .form-title {
   display: flex;
-  color: #732720;
-  background-color: #d8d8d8;
+  color: #491401;
+  background-color: #cacaca;
   padding: 0.5em;
   width: fit-content;
   margin-bottom: 1em;
@@ -502,15 +485,15 @@ body {
 }
 .cont-form .formulario .btn {
   font-family: "MedievalSharp", cursive;
-  background-color: #d8d8d8;
-  color: #732720;
+  background-color: #cacaca;
+  color: #491401;
   border: 0;
   transition: 0.2s;
   border-radius: 0;
 }
 .cont-form .formulario .btn:hover {
-  background-color: #e6b67b;
-  color: #732720;
+  background-color: #b63c10;
+  color: #cacaca;
 }
 @media (max-width: 700px) {
   .cont-form .formulario {
@@ -569,13 +552,13 @@ body {
   align-items: center;
   flex-direction: column;
   border-style: solid;
-  border-color: #732720;
+  border-color: #491401;
   border-width: 1rem;
-  background-color: #732720;
+  background-color: #cacaca;
 }
 .razas .razas-foto .nombre {
   font-size: 3em;
-  color: #d8d8d8;
+  color: #491401;
 }
 @media (max-width: 700px) {
   .razas .razas-foto {
@@ -583,15 +566,15 @@ body {
   }
 }
 .razas .nav-pills .nav-link.active, .razas .nav-pills .show > .nav-link {
-  color: #732720;
-  background-color: #d8d8d8;
+  color: #491401;
+  background-color: #cacaca;
   font-weight: bolder;
 }
 .razas .nav-pills .nav-link {
   border-radius: 0;
 }
 .razas .nav-pills {
-  background-color: #732720;
+  background-color: #491401;
   height: fit-content;
 }
 @media (max-width: 700px) {
@@ -600,17 +583,17 @@ body {
   }
 }
 .razas .nav-link {
-  color: #d8d8d8;
+  color: #cacaca;
 }
 .razas .nav-link:hover {
-  color: #e6b67b;
+  color: #b63c10;
 }
 .razas .tab-content {
   width: 100%;
 }
 .razas .tab-pane {
-  background-color: #d8d8d8;
-  padding: 0.5em;
+  background-color: #cacaca;
+  padding: 1rem;
   font-family: "Signika Negative", sans-serif;
   height: 31.5rem;
   overflow: scroll;
@@ -651,9 +634,9 @@ body {
   justify-content: center;
   width: 24rem;
   height: 6rem;
-  background-color: #732720;
+  background-color: #491401;
   font-size: 1.5em;
-  color: #d8d8d8;
+  color: #cacaca;
   text-align: center;
   font-weight: bolder;
   flex-wrap: nowrap;
@@ -670,15 +653,15 @@ body {
   text-decoration: none;
   width: 24rem;
   height: 3rem;
-  background-color: #d8d8d8;
+  background-color: #cacaca;
   font-size: 1.1em;
-  color: #732720;
+  color: #491401;
   text-align: center;
   transition: 0.1s;
 }
 .librospadre .libros__contenido:hover {
-  background-color: #e6b67b;
-  color: #732720;
+  background-color: #b63c10;
+  color: #cacaca;
   transform: scale(1.02);
   font-weight: bold;
   box-shadow: 0 0 0.2em 0.1em rgba(0, 0, 0, 0.2);
@@ -703,7 +686,7 @@ body {
 }
 .video .reproductor {
   border-style: solid;
-  border-color: #732720;
+  border-color: #491401;
   border-width: 1rem;
   display: flex;
   flex-wrap: nowrap;
@@ -739,8 +722,8 @@ body {
   font-weight: bolder;
   font-size: 2em;
   width: 100%;
-  background-color: #732720;
-  color: #d8d8d8;
+  background-color: #491401;
+  color: #cacaca;
 }
 .video .video__info .videotexto {
   display: flex;
@@ -753,20 +736,52 @@ body {
   margin-right: auto;
   padding: 1rem;
   line-height: 1.3rem;
-  background-color: #d8d8d8;
-  color: #732720;
+  background-color: #cacaca;
+  color: #491401;
   font-family: "Signika Negative", sans-serif;
 }
 .video .video__info .btn {
-  background-color: #d8d8d8;
-  color: #732720;
+  background-color: #cacaca;
+  color: #491401;
   border: 0;
   transition: 0.2s;
   border-radius: 0;
 }
 .video .video__info .btn:hover {
-  background-color: #e6b67b;
-  color: #732720;
+  background-color: #b63c10;
+  color: #cacaca;
+}
+
+/*Tabla de Clases*/
+.tftable {
+  font-size: 12px;
+  color: #333333;
+  width: 100%;
+  border-width: 1px;
+  border-color: #a9a9a9;
+  border-collapse: collapse;
+}
+
+.tftable th {
+  font-size: 12px;
+  background-color: #979797;
+  border-width: 1px;
+  padding: 8px;
+  border-style: solid;
+  border-color: #a9a9a9;
+  text-align: left;
+}
+
+.tftable tr {
+  background-color: #ffffff;
+}
+
+.tftable td {
+  font-size: 12px;
+  border-width: 1px;
+  padding: 8px;
+  border-style: solid;
+  border-color: #a9a9a9;
 }
 
 /*# sourceMappingURL=style.css.map */

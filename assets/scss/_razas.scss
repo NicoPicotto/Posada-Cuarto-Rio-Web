@@ -53,11 +53,11 @@
           border-style: solid;
           border-color: $color-primario;
           border-width: 1rem;
-          background-color:$color-primario;
+          background-color:$color-terciario;
 
             .nombre{
                 font-size: 3em;
-                color: $color-terciario;
+                color: $color-primario;
             }
 
             @media (max-width: 700px) {
@@ -99,7 +99,7 @@
           
           .tab-pane{
             background-color: $color-terciario;
-            padding: 0.5em;
+            padding: 1rem;
             font-family: 'Signika Negative', sans-serif;
             height: 31.5rem;
             overflow: scroll;

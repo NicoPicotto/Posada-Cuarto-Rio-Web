@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Estilos Boostrap y CSS-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="../assets/css/style.css">
+	<!-- Descripcion-->
+	<meta name="description" content="Todas las clases de D&D y sus características más importantes.">
+	<!-- Key Words-->
+	<meta name="keywords" content="calabozos, dragones, juego de mesa, dungeons, dragons, recursos, libros, D&D, roll">
+	<!-- Icono del sitio-->
+	<link rel="shortcut icon" href="../img/icono.ico" type="image/x-icon">
+	<!-- Titulo de esta pagina-->
+	<title>Posada del Cuarto Río | Todo sobre las clases de D&D y sus pecualiaridades</title>
+</head>
+<body>
+	<!-- HEADER-->
+	<header>
+		<nav class="nav">
+			<div class="nav__container">
+				<div class="nav__logo">
+					<a href="../index.html"><img src="../img/logomini.png" alt="Logo Posada"></a>
+				</div>
+				<label for="menu" class="nav__label">
+					<img src="../assets/svg/menu.svg" alt="Hamburguesa" class="nav__img">
+				</label>
+				<input type="checkbox" name="Hamburguesa" id="menu" class="nav__input">
+
+				<div class="nav__menu">
+					<a href="nosotros.html" class="nav__item">Nosotros</a>
+					<a href="apoyanos.html" class="nav__item">Apoyanos</a>
+					<a href="contacto.html" class="nav__item">Contacto</a>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!--PORTADA PRINCIPAL-->
+	<div class="portada-container-secciones">
+		<h1>Clases</h1>
+	</div>
+	<!--PORTADAS CLASES-->
+    <div class="portadas-contenedor">
+		<a href="barbaro.html"><img src="../img/clases-portada-barbaro.jpg" alt="Portada Barbaro" class="portadas-seccion"></a>
+		<a href="bardo.html"><img src="../img/clases-portada-bardo.jpg" alt="Portada Bardo" class="portadas-seccion"></a>
+		<a href="brujo.html"><img src="../img/clases-portada-brujo.jpg" alt="Portada Brujo" class="portadas-seccion"></a>
+		<a href="clerigo.html"><img src="../img/clases-portada-clerigo.jpg" alt="Porda Clerigo" class="portadas-seccion"></a>
+	</div>
+	<div class="portadas-contenedor">
+		<a href="druida.html"><img src="../img/clases-portada-druida.jpg" alt="Portada Druida" class="portadas-seccion"></a>
+		<a href="explorador.html"><img src="../img/clases-portada-explorador.jpg" alt="Portada Explorador" class="portadas-seccion"></a>
+		<a href="guerrero.html"><img src="../img/clases-portada-guerrero.jpg" alt="Portada Guerero" class="portadas-seccion"></a>
+		<a href="hechicero.html"><img src="../img/clases-portada-hechicero.jpg" alt="Portada Hechicero" class="portadas-seccion"></a>
+	</div>
+    <div class="portadas-contenedor">
+		<a href="mago.html"><img src="../img/clases-portada-mago.jpg" alt="Portada Mago" class="portadas-seccion"></a>
+		<a href="monje.html"><img src="../img/clases-portada-monje.jpg" alt="Portada Monje" class="portadas-seccion"></a>
+		<a href="paladin.html"><img src="../img/clases-portada-paladin.jpg" alt="Portada Paladin" class="portadas-seccion"></a>
+		<a href="picaro.html"><img src="../img/clases-portada-picaro.jpg" alt="Portada Picaro" class="portadas-seccion"></a>
+	</div>
+    <br>
+    <!--CONTENIDO CLASES-->
+    <main class="razas">
+        <div class="razas-foto">
+            <img src="../img/clases-individual-bardo.png" alt="Foto Individual Bardo">
+			<div class="nombre">Bardo</div>
+		</div>
+		<div class="navegacion">
+		<nav class="nav nav-pills" id="pills-tab" role="tablist">
+			<a class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Rasgos de clase</a>
+			<a class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" href="#pills-subrazas" role="tab" aria-controls="pills-profile" aria-selected="false">Tabla por nivel</a>
+			<a class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" href="#pills-clases" role="tab" aria-controls="pills-profile" aria-selected="false">Características</a>
+			<a class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" href="#pills-nombres" role="tab" aria-controls="pills-profile" aria-selected="false">Conjuros</a>
+		  </nav>
+		  <div class="tab-content" id="pills-tabContent">
+			<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+				<p><span>PUNTOS DE GOLPE</span></p>
+				<p>	Dados de golpe: 1d8 por nivel de bardo	</p>
+                <p>	Puntos de golpe a nivel 1: 8 + tu modificador por Constitución	</p>
+                <p>	Puntos de golpe a niveles superiores: 1d8 (o 5) + tu modificador por Constitución por nivel de bardo después del nivel 1	</p>
+				<p><span>COMPETENCIAS</span></p>
+				<p>	Armadura: Armadura ligera	</p>
+                <p>	Armas: Armas sencillas, ballestas de mano, espadas largas, estoques, espadas cortas	</p>
+                <p>	Herramientas: Tres instrumentos musicales de tu elección	</p>
+                <p>	Tiradas de salvación: Carisma, Destreza	</p>
+                <p>	Habilidades: Elige tres cualesquiera	</p>
+				<p><span>EQUIPO</span></p>
+				<p>	Empiezas con el siguiente equipo, además del equipo que te proporciona tu trasfondo:	</p>
+                <p>	Un estoque, (b) una espada larga o (c) cualquier arma sencilla	</p>
+                <p>	Un pack de diplomático o (b) un pack de artista	</p>
+                <p>	Una flauta o (b) cualquier otro instrumento musical	</p>
+                <p>	Armadura de cuero y daga	</p>
+        	</div>
+			<div class="tab-pane fade" id="pills-subrazas" role="tabpanel" aria-labelledby="pills-subrazas-tab">
+				<table class="tftable" border="1">
+					<tr><th>Nivel</th><th>Bonif. de Competencia</th><th>Rasgos</th><th>Trucos</th><th>Conjuros</th><th>Espacios de conjuro</th></tr>
+                       <tr><td>1</td><td>	+2	</td><td>	Lanzamiento de conjuros, Inspiración Bárdica (d6)	</td><td>	2	</td><td>	4	</td><td>	4/2/–/–/–/–/–/–/–/–	</td></tr>
+                       <tr><td>2</td><td>	+2	</td><td>	Aprendiz de Mucho, Canción de Descanso (d6)	</td><td>	2	</td><td>	5	</td><td>	5/3/–/–/–/–/–/–/–/–	</td></tr>
+                       <tr><td>3</td><td>	+2	</td><td>	Colegio Bárdico, Pericia	</td><td>	2	</td><td>	6	</td><td>	6/4/2/–/–/–/–/–/–/–	</td></tr>
+                       <tr><td>4</td><td>	+2	</td><td>	Mejora de Característica	</td><td>	3	</td><td>	7	</td><td>	7/4/3/–/–/–/–/–/–/–	</td></tr>
+                       <tr><td>5</td><td>	+3	</td><td>	Inspiración Bárdica (d8), Fuente de Inspiración	</td><td>	3	</td><td>	8	</td><td>	8/4/3/2/–/–/–/–/–/–	</td></tr>
+                       <tr><td>6</td><td>	+3	</td><td>	Contraencantamiento, Rasgo de Colegio Bárdico	</td><td>	3	</td><td>	9	</td><td>	9/4/3/3/–/–/–/–/–/–	</td></tr>
+                       <tr><td>7</td><td>	+3	</td><td>	–	</td><td>	3	</td><td>	10	</td><td>	10/4/3/3/1/–/–/–/–/–	</td></tr>
+                       <tr><td>8</td><td>	+3	</td><td>	Mejora de Característica	</td><td>	3	</td><td>	11	</td><td>	11/4/3/3/2/–/–/–/–/–	</td></tr>
+                       <tr><td>9</td><td>	+4	</td><td>	Canción de Descanso (d8)	</td><td>	3	</td><td>	12	</td><td>	12/4/3/3/3/1/–/–/–/–	</td></tr>
+                       <tr><td>10</td><td>	+4	</td><td>	Inspiración Bárdica (d10), Pericia, Secretos Mágicos	</td><td>	4	</td><td>	14	</td><td>	14/4/3/3/3/2/–/–/–/–	</td></tr>
+                       <tr><td>11</td><td>	+4	</td><td>	–	</td><td>	4	</td><td>	15	</td><td>	15/4/3/3/3/2/1/–/–/–	</td></tr>
+                       <tr><td>12</td><td>	+4	</td><td>	Mejora de característica	</td><td>	4	</td><td>	15	</td><td>	15/4/3/3/3/2/1/–/–/–	</td></tr>
+                       <tr><td>13</td><td>	+5	</td><td>	Canción de Descanso (d10)	</td><td>	4	</td><td>	16	</td><td>	16/4/3/3/3/2/1/1/–/–	</td></tr>
+                       <tr><td>14</td><td>	+5	</td><td>	Secretos Mágicos, Rasgo de Colegio Bárdico	</td><td>	4	</td><td>	18	</td><td>	18/4/3/3/3/2/1/1/–/–	</td></tr>
+                       <tr><td>15</td><td>	+5	</td><td>	Inspiración Bárdica (d12)	</td><td>	4	</td><td>	19	</td><td>	19/4/3/3/3/2/1/1/1/–	</td></tr>
+                       <tr><td>16</td><td>	+5	</td><td>	Mejora de Característica	</td><td>	4	</td><td>	19	</td><td>	19/4/3/3/3/2/1/1/1/–	</td></tr>
+                       <tr><td>17</td><td>	+6	</td><td>	Canción de Descanso (d12)	</td><td>	4	</td><td>	20	</td><td>	20/4/3/3/3/2/1/1/1/1	</td></tr>
+                       <tr><td>18</td><td>	+6	</td><td>	Secretos Mágicos	</td><td>	4	</td><td>	22	</td><td>	22/4/3/3/3/3/1/1/1/1	</td></tr>
+                       <tr><td>19</td><td>	+6	</td><td>	Mejora de Característica	</td><td>	4	</td><td>	22	</td><td>	22/4/3/3/3/3/2/1/1/1	</td></tr>
+                       <tr><td>20</td><td>	+6	</td><td>	Inspiración Superior	</td><td>	4	</td><td>	22	</td><td>	22/4/3/3/3/3/2/2/1/1	</td></tr>
+                </table>
+			</div>
+			<div class="tab-pane fade" id="pills-clases" role="tabpanel" aria-labelledby="pills-clases-tab">
+				<p><span>	TRUCOS	</span></p>
+                <p>	Conoces dos trucos de tu elección de la lista de conjuros de bardo. En los niveles superiores aprendes más, como se muestra en la columna «Trucos» de la tabla del bardo.	</p>
+
+				<p><span>	ESPACIOS DE CONJURO	</span></p>
+                <p>	La tabla del bardo muestra cuántos espacios de conjuro tienes en cada nivel. Cuando lanzas un conjuro, debes gastar un espacio de conjuro del mismo nivel o superior. Recuperas los espacios de conjuro gastados cuando acabes un descanso prolongado. Por ejemplo, si conoces el conjuro Curar heridas (de nivel 1) y tienes disponibles un espacio de conjuro de nivel 1 y otro de nivel 2, puedes lanzarlo con cualquiera de los dos.	</p>
+
+				<p><span>	CONJUROS CONOCIDOS EN NIVEL 1	</span></p>
+                <p>	Conoces cuatro conjuros de nivel 1 que elijas de la lista de conjuros de bardo.	</p>
+                <p>	La columna «Conjuros» de la tabla del bardo muestra cuándo aprendes nuevos conjuros. Los conjuros deben ser de un nivel para el que tengas espacios de conjuro, como se indica en la tabla. Por ejemplo, cuando alcanzas el nivel 3 en esta clase, puedes aprender un nuevo conjuro de nivel 1 o 2.	</p>
+                <p>	Además, cuando consigues un nivel de esta clase, puedes elegir uno de los conjuros de bardo que conozcas y remplazarlo por otro conjuro de la lista de conjuros de bardo, el cual también debe ser de un nivel para el cual tengas espacios de conjuro.	</p>
+
+				<p><span>	CARACTERÍSTICA PARA LANZAR CONJUROS	</span></p>
+                <p>	La característica con la que lanzas tus conjuros de bardo es Carisma. Tu magia proviene del corazón y del alma que pones en la interpretación de tu música u recitación. Utilizas Carisma cuando un conjuro se refiere a tu característica para lanzar conjuros. Además, usas tu modificador por Carisma para establecer la CD de tu tirada de salvación para los conjuros de bardo que lances y cuando hagas una tirada de ataque con uno.	</p>
+                <p>	CD de la salvación de conjuros = 8 + tu bonificador por competencia + tu modificador por Carisma	</p>
+                <p>	Modificador al ataque con conjuros = tu bonificador por competencia + tu modificador por Carisma	</p>
+
+				<p><span>	LANZAMIENTO RITUAL	</span></p>
+                <p>	Puedes lanzar cualquier conjuro de bardo que conozcas como si fuera un ritual si tiene la etiqueta «ritual».	</p>
+
+				<p><span>	FOCO PARA LANZAR CONJUROS	</span></p>
+                <p>	Puedes usar un instrumento musical (ver «Equipo», página XXX) como foco para lanzar tus conjuros de bardo.	</p>
+
+				<p><span>	INSPIRACIÓN BÁRDICA	</span></p>
+                <p>	Puedes inspirar a los demás con palabras o música emotivas. Para hacerlo, usa una acción adicional durante tu turno para elegir una criatura a menos de 60 pies de ti que no seas tú mismo y que pueda oírte. Esa criatura recibe un dado (1d6) de inspiración de bardo.	</p>
+                <p>	Una vez durante los siguientes diez minutos, la criatura puede tirar el dado y sumar el resultado a una prueba de característica, tirada de ataque o tirada de salvación. Puede esperar hasta después de haber tirado el d20 para decidir si usa el dado de inspiración de bardo, pero debe decidirlo antes de que el director de juego diga si la tirada ha tenido éxito o ha fallado. Una vez se tira el dado de inspiración de bardo, se pierde. Una criatura solo puede tener un dado de inspiración de bardo a la vez.	</p>
+                <p>	Puedes usar este rasgo tantas veces como tu modificador de Carisma (mínimo 1). Recuperas los usos que hayas gastado cuando finalices un descanso prolongado.	</p>
+                <p>	Tu dado de inspiración de bardo cambia cuando alcanzas ciertos niveles de esta clase. El dado se convierte en 1d8 en el nivel 5, 1d10 en el nivel 10 y 1d12 en el nivel 15.	</p>
+
+				<p><span>	APRENDIZ DE MUCHO	</span></p>
+                <p>	A partir del nivel 2, puedes añadir la mitad de tu bonificador por competencia (redondeando hacia abajo) a cualquier prueba de característica que realices y que no lo incluya ya.	</p>
+
+				<p><span>	CANCIÓN DE DESCANSO	</span></p>
+                <p>	A partir del nivel 2, puedes tocar música o hacer un recital relajante para ayudar a tus aliados heridos durante un descanso breve. Si tú o cualquier criatura amistosa que pueda escuchar tu interpretación gasta uno o más dados de golpe al final del descanso para recuperar puntos de golpe, recuperáis 1d6 puntos de golpe adicionales.	</p>
+                <p>	Los puntos de golpe adicionales aumentan cuando alcanzas ciertos niveles en esta clase: a 1d8 en el nivel 9, a 1d10 en el nivel 13 y a 1d12 en el nivel 17.	</p>
+
+                <p><span>	COLEGIO BÁRDICO	</span></p>
+                <p>	En el nivel 3, profundizas en las avanzadas técnicas de un colegio de bardos de tu elección: el Colegio del Conocimiento (que se detalla al final de la descripción de esta clase). Tu elección te concede rasgos en el nivel 3 y de nuevo en los niveles 6 y 14.	</p>
+                
+				<p><span>	PERICIA	</span></p>
+                <p>	En el nivel 3, elije dos de tus competencias en habilidades. Tu bonificador por competencia se duplica para cualquier prueba de habilidad que utilice cualquiera de las competencias elegidas.	</p>
+                <p>	En el nivel 10, puedes elegir otras dos competencias de habilidad para conseguir este beneficio.	</p>
+
+				<p><span>	MEJORA DE CARACTERÍSTICA	</span></p>
+                <p>	Cuando alcanzas el nivel 4, y de nuevo en los niveles 8, 12, 16 y 19, puedes aumentar una puntuación de característica de tu elección en 2 o dos puntuaciones de característica en 1. Como siempre, no puedes aumentar tu puntación de característica por encima de 20 usando este rasgo.	</p>
+
+				<p><span>	FUENTE DE INSPIRACIÓN	</span></p>
+                <p>	A partir del momento en que alcances el nivel 5, recuperas todos los usos de tu inspiración de bardo cuando acabes un descanso breve o prolongado.	</p>
+
+				<p><span>	CONTRAENCANTAMIENTO	</span></p>
+                <p>	En el nivel 6, consigues la capacidad de usar el poder de las notas musicales o de las palabras para interrumpir los efectos enajenadores. Puedes usar una acción para empezar una actuación que dura hasta el final de tu siguiente turno. Durante ese tiempo, cualquier criatura amistosa que se encuentre dentro de un radio de 30 pies y tú tenéis ventaja en cualquier tirada de salvación para no quedar asustados o hechizados. Las criaturas deben ser capaces de oírte para obtener este beneficio. La actuación acaba antes si quedas incapacitado o silenciado, o si la acabas voluntariamente (lo cual no requiere una acción).	</p>
+
+                <p><span>	SECRETOS MÁGICOS	</span></p>
+                <p>	Cuando llegues al nivel 10, habrás aprendido conocimiento mágico de varias disciplinas. Elige dos conjuros de cualquier clase, incluyendo esta, que sean bien un truco, bien un conjuro de un nivel que puedas lanzar, como se muestra en la tabla del bardo. Para ti, los conjuros que hayas elegido cuentan como conjuros de bardo y se incluyen en el número de conjuros conocidos de la columna de la tabla del bardo.	</p>
+                <p>	En los niveles 14 y 18, vuelves a aprender dos conjuros adicionales de cualquier clase.	</p>
+
+                <p><span>	INSPIRACIÓN SUPERIOR	</span></p>
+                <p>	En el nivel 20, cuando tires iniciativa y no te quede inspiración de bardo, recuperas un uso.	</p>
+			</div>
+			<div class="tab-pane fade" id="pills-nombres" role="tabpanel" aria-labelledby="pills-nombres-tab">
+                <p><span>	Nivel 0	</span></p>
+                <p>	Burla dañina 	</p>
+                <p>	Ilusión menor 	</p>
+                <p>	Impacto certero 	</p>
+                <p>	Luces danzantes 	</p>
+                <p>	Luz 	</p>
+                <p>	Mano de mago 	</p>
+                <p>	Mensaje 	</p>
+                <p>	Prestidigitación 	</p>
+                <p>	Reparar 	</p>
+                <p><span>	Nivel 1	</span></p>
+                <p>	Caída de pluma 	</p>
+                <p>	Curar heridas 	</p>
+                <p>	Detectar magia 	</p>
+                <p>	Disfrazarse 	</p>
+                <p>	Dormir 	</p>
+                <p>	Encantar animal 	</p>
+                <p>	Entender idiomas 	</p>
+                <p>	Fuego feérico 	</p>
+                <p>	Hablar con los animales 	</p>
+                <p>	Hechizar persona 	</p>
+                <p>	Heroísmo 	</p>
+                <p>	Identificar 	</p>
+                <p>	Imagen silenciosa 	</p>
+                <p>	Ola atronadora 	</p>
+                <p>	Palabra de curación 	</p>
+                <p>	Perdición 	</p>
+                <p>	Risa horrible de Tasha 	</p>
+                <p>	Sirviente invisible 	</p>
+                <p>	Texto ilusorio 	</p>
+                <p>	Zancada prodigiosa 	</p>
+                <p><span>	Nivel 2	</span></p>
+                <p>	Abrir 	</p>
+                <p>	Boca mágica 	</p>
+                <p>	Calentar metal 	</p>
+                <p>	Calmar emociones 	</p>
+                <p>	Detectar pensamientos 	</p>
+                <p>	Embelesar 	</p>
+                <p>	Hacer añicos 	</p>
+                <p>	Inmovilizar persona 	</p>
+                <p>	Invisibilidad 	</p>
+                <p>	Localizar animales o plantas 	</p>
+                <p>	Localizar objeto 	</p>
+                <p>	Mensajero animal 	</p>
+                <p>	Potenciar característica 	</p>
+                <p>	Restablecimiento menor 	</p>
+                <p>	Silencio 	</p>
+                <p>	Sordera / Ceguera 	</p>
+                <p>	Sugestión 	</p>
+                <p>	Ver invisibilidad 	</p>
+                <p>	Zona de verdad 	</p>
+                <p><span>	Nivel 3	</span></p>
+                <p>	Clarividencia 	</p>
+                <p>	Crecimiento vegetal 	</p>
+                <p>	Disipar magia 	</p>
+                <p>	Don de lenguas 	</p>
+                <p>	Glifo custodio 	</p>
+                <p>	Hablar con las plantas 	</p>
+                <p>	Hablar con los muertos 	</p>
+                <p>	Imagen mayor 	</p>
+                <p>	Imponer maldición 	</p>
+                <p>	Indetectable 	</p>
+                <p>	Nube apestosa 	</p>
+                <p>	Patrón hipnótico 	</p>
+                <p>	Pequeña choza de Leomund 	</p>
+                <p>	Recado 	</p>
+                <p>	Terror 	</p>
+                <p><span>	Nivel 4	</span></p>
+                <p>	Compulsión 	</p>
+                <p>	Confusión 	</p>
+                <p>	Invisibilidad mejorada 	</p>
+                <p>	Libertad de movimiento 	</p>
+                <p>	Localizar criatura 	</p>
+                <p>	Polimorfar 	</p>
+                <p>	Puerta dimensional 	</p>
+                <p>	Terreno alucinatorio 	</p>
+                <p><span>	Nivel 5	</span></p>
+                <p>	Alterar los recuerdos 	</p>
+                <p>	Alzar a los muertos 	</p>
+                <p>	Animar objetos 	</p>
+                <p>	Apariencia 	</p>
+                <p>	Atadura planar 	</p>
+                <p>	Círculo de teletransportación 	</p>
+                <p>	Conocer las leyendas 	</p>
+                <p>	Curar heridas en masa 	</p>
+                <p>	Despertar 	</p>
+                <p>	Dominar persona 	</p>
+                <p>	Engañar 	</p>
+                <p>	Ensueño 	</p>
+                <p>	Escudriñar 	</p>
+                <p>	Geas 	</p>
+                <p>	Inmovilizar monstruo 	</p>
+                <p>	Restablecimiento mayor 	</p>
+                <p><span>	Nivel 6	</span></p>
+                <p>	Baile irresistible de Otto 	</p>
+                <p>	Encontrar el camino 	</p>
+                <p>	Guardas y guardias 	</p>
+                <p>	Ilusión programada 	</p>
+                <p>	Mal de ojo 	</p>
+                <p>	Sugestión en masa 	</p>
+                <p>	Visión veraz 	</p>
+                <p><span>	Nivel 7	</span></p>
+                <p>	Espada de Mordenkainen 	</p>
+                <p>	Espejismo arcano 	</p>
+                <p>	Excursión etérea 	</p>
+                <p>	Jaula de fuerza 	</p>
+                <p>	Magnífica mansión de Mordenkainen 	</p>
+                <p>	Proyectar imagen 	</p>
+                <p>	Regenerar 	</p>
+                <p>	Resurrección 	</p>
+                <p>	Símbolo 	</p>
+                <p>	Teletransporte 	</p>
+                <p><span>	Nivel 8	</span></p>
+                <p>	Dominar monstruo 	</p>
+                <p>	Labia 	</p>
+                <p>	Mente en blanco 	</p>
+                <p>	Palabra de poder: aturdir 	</p>
+                <p>	Romper la mente 	</p>
+                <p><span>	Nivel 9	</span></p>
+                <p>	Palabra de poder: matar 	</p>
+                <p>	Polimorfar verdadero 	</p>
+                <p>	Presagio 	</p>
+                
+			</div>
+		  </div>
+		</div>
+	</main>
+    <br>
+    <div class="inicioboton">
+        <a href="../index.html" class="inicio">VOLVER AL INICIO</a>
+    </div>
+        <br>
+	<!--FOOTER-->
+	<footer class="footer-container">
+		<div class="social-container">
+			<a href="https://www.facebook.com/PosadaDelCuartoRio/" class="fa fa-facebook"></a>
+			<a href="https://twitter.com/posadadel4torio" class="fa fa-twitter"></a>
+			<a href="https://www.instagram.com/posadadelcuartorio/" class="fa fa-instagram"></a>
+		</div>
+		<div class="copy-container">
+			<h3>Copyright © Todos los derechos reservados</h3>
+		</div>
+	</footer>
+
+<!-- BOOTSTRAP LIKNS DINÁMICOS -->
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+
+</body>
+</html>

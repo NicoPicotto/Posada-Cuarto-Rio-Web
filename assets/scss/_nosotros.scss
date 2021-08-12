@@ -15,6 +15,7 @@
             background-color: $color-primario;
             padding: 0.5em;
             justify-content: center;
+            border-radius: 0;
     
             @media (max-width: 700px) {
               flex-wrap: nowrap;
@@ -52,8 +53,8 @@
                 border-radius: 0;
     
                 &:hover{
-                    background-color: $color-secundario;
-                    color: $color-primario;
+                  background-color: $color-secundario;
+                  color: $color-terciario;
                 }
     
             }
