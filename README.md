@@ -6,7 +6,7 @@ _Proyecto final para el curso de Desarrollo Web de la plataforma Coderhouse._
 
 _En este proyecto se creó un sitio que aglomera recursos y material infromativo sobre el juego Calabozos & Dragones (Dungeons & Dragons)._  
 
-![Podés ver el sitio en vivo haciendo click aquí](https://posadadelcuartorio.000webhostapp.com/)
+[Podés ver el sitio en vivo haciendo click aquí](https://posadadelcuartorio.000webhostapp.com/)
 
 ## Construido con 🛠️
  * HTML
