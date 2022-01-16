@@ -2,7 +2,7 @@
 
 _Proyecto final para el curso de Desarrollo Web de la plataforma Coderhouse._
 
-## Flujo por el sitio 🚀
+## De qué se trata 🚀
 
 _En este proyecto se creó un sitio que aglomera recursos y material infromativo sobre el juego Calabozos & Dragones (Dungeons & Dragons)._  
 
